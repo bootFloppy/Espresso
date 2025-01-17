@@ -8,5 +8,5 @@ module.exports = {
 		//await interaction.reply(':ping_pong: ${client.ws.ping}ms.');
 		const sent = await interaction.reply({ content: 'Pinging...', fetchReply: true });
 		interaction.editReply(`:ping_pong: ${sent.createdTimestamp - interaction.createdTimestamp}ms`);
-	},
+	}
 };
